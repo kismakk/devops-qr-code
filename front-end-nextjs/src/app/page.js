@@ -28,9 +28,11 @@ export default function Home() {
           placeholder="Enter URL like https://example.com"
           style={styles.input}
         />
-        <button type="submit" style={styles.button}>Generate QR Code</button>
+        <button type="submit" style={styles.button}>
+          Generate QR Code
+        </button>
       </form>
-      {qrCodeUrl && <img src={qrCodeUrl} alt="QR Code" style={styles.qrCode} />}
+      {qrCodeUrl && <p style={styles.qrCode}>{qrCodeUrl}</p>}
     </div>
   );
 }
@@ -45,6 +47,7 @@ const styles = {
     justifyContent: 'center',
     backgroundColor: '#121212',
     color: 'white',
+    textWrap: 'wrap',
   },
   title: {
     margin: '0',
@@ -63,8 +66,7 @@ const styles = {
     border: 'none',
     marginTop: '20px',
     width: '300px',
-    color: '#121212'
-
+    color: '#121212',
   },
   button: {
     padding: '10px 20px',
@@ -77,5 +79,8 @@ const styles = {
   },
   qrCode: {
     marginTop: '20px',
+    wordWrap: 'break-word',
+    overflowWrap: 'break-word',
+    maxWidth: '80%',
   },
 };
