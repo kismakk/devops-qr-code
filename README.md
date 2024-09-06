@@ -3,6 +3,18 @@
 This is the sample application for the DevOps Capstone Project.
 It generates QR Codes for the provided URL, the front-end is in NextJS and the API is written in Python using FastAPI.
 
+## TODO
+
+My objective is to practice DevOps with the application by doing the following:
+
+- [x] Create Dockerfiles for both backend and frontend
+- [x] Create a docker-compose.yml file to spin up both of the instances at the same time
+- [ ] Create Terraform files for resource handling and managing infrastructure in Azure
+- [ ] Create GitHub Actions workflows to following
+  - [ ] Creating Docker images and pushing them to a image registry
+  - [ ] Provisioning infrastructure from Azure
+  - [ ] Deploying the application
+
 ## Application
 
 **Front-End** - A web application where users can submit URLs.
